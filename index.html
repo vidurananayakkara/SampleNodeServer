@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title> Insert numbers </title>
+
+    <script type="text/javascript">
+        function operation(){
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            location.href = "http://localhost:10001" + "?number1=" + n1 + "&number2=" + n2;
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Inserte dos números </h1>
+    <form id="forma1" action="post"> 
+        <input type="text" id="num1"></input>
+        <input type="text" id="num2"></imput>
+        <input type="button" onClick="operation()" value="Submit form"></input>
+    </form>
+</body>
+
+<html>
